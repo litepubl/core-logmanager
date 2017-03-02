@@ -1,5 +1,5 @@
 {
-    "name": "litepubl\/logfactory",
+    "name": "litepubl/logfactory",
     "type": "litepubl-core",
     "version": "7.08.0",
     "description": "Fast powerfull CMS",
@@ -25,7 +25,8 @@
     },
     "require": {
         "php": ">=7.00.0",
-        "psr/log": "^1.0"
+        "psr/log": "^1.0",
+        "psr/container": "^1.0"
     },
     "autoload": {
         "psr-4": {
