@@ -1,26 +1,27 @@
 {
-    "name": "litepubl/logfactory",
-    "type": "litepubl-core",
+    "name": "litepubl/logmanager",
+    "type": "library",
     "version": "7.08.0",
     "description": "Fast powerfull CMS",
     "keywords": [
-        "CMS",
+        "Logger",
+"Lazy proxy",
         "framework",
-        "blog"
+        "Container"
     ],
-    "homepage": "https:\/\/github.com\/litepubl\/cms",
+    "homepage": "https:\/\/github.com\/litepubl\/logmanager",
     "license": "MIT",
     "authors": [
         {
             "name": "Vladimir Yushko",
             "email": "yarrowsoft@gmail.com",
-            "homepage": "http:\/\/litepublisher.com",
+            "homepage": "http://litepublisher.ru/",
             "role": "Developer"
         }
     ],
     "support": {
         "email": "yarrowsoft@gmail.com",
-        "source": "https:\/\/github.com\/litepubl\/cms\/releases",
+        "source": "https://github.com/litepubl/logmanager/releases",
         "doc": "http:\/\/litepublisher.ru\/"
     },
     "require": {
@@ -30,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "litepubl\\core\\LogFactory\\": "src/"
+            "litepubl\\core\\logmanager\\": "src/"
         }
     }
 }
