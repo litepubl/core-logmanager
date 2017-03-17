@@ -2,12 +2,10 @@
     "name": "litepubl/logmanager",
     "type": "library",
     "version": "7.08.0",
-    "description": "Fast powerfull CMS",
+    "description": "Interface and lazy proxy for access to logger",
     "keywords": [
         "Logger",
-"Lazy proxy",
-        "framework",
-        "Container"
+"Lazy proxy"
     ],
     "homepage": "https:\/\/github.com\/litepubl\/logmanager",
     "license": "MIT",
@@ -22,16 +20,23 @@
     "support": {
         "email": "yarrowsoft@gmail.com",
         "source": "https://github.com/litepubl/logmanager/releases",
-        "doc": "http:\/\/litepublisher.ru\/"
+        "doc": "https://github.com/litepubl/logmanager/releases"
     },
     "require": {
         "php": ">=7.00.0",
-        "psr/log": "^1.0",
-        "psr/container": "^1.0"
+        "psr/log": "^1.0"
+    },
+    "require-dev": {
+        "codeception/codeception" : "^2.2.7"
     },
     "autoload": {
         "psr-4": {
             "litepubl\\core\\logmanager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "litepubl\\tests\\logmanager\\": "tests/unit/"
         }
     }
 }
