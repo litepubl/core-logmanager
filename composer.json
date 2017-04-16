@@ -2,10 +2,11 @@
     "name": "litepubl/logmanager",
     "type": "library",
     "version": "7.08.0",
-    "description": "Interface and lazy proxy for access to logger",
+    "description": "Top level interface for manage logs",
     "keywords": [
         "Logger",
-"Lazy proxy"
+        "Exception",
+"Lazy factory"
     ],
     "homepage": "https:\/\/github.com\/litepubl\/logmanager",
     "license": "MIT",

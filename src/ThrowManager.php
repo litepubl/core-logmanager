@@ -2,13 +2,22 @@
 
 namespace litepubl\core\logmanager;
 
+use Psr\Log\LoggerInterface;
+
 class ThrowManager implements LogManagerInterface
 {
+    private $logger;
     private $exceptionClass;
 
-    public function __construct(string $exceptionClass = \RuntimeException::class)
+    public function __construct(LoggerInterface $logger, string $exceptionClass = \RuntimeException::class)
     {
+        $this->logger = $logger;
         $this->exceptionClass = $exceptionClass;
+    }
+
+    public function getLogger():LoggerInterface
+    {
+        return $this->logger;
     }
 
     public function logException(\Throwable $e, array $context = [])
@@ -20,5 +29,15 @@ class ThrowManager implements LogManagerInterface
     {
         $exceptionClass = $this->exceptionClass;
         throw new $exceptionClass($message, $code);
+    }
+
+    public function trace(string $message = '', array $context = [])
+    {
+        $this->error($message);
+    }
+
+    public function getHtmlLog(): string
+    {
+        return '';
     }
 }
